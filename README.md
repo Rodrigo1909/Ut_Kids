@@ -1,2 +1,2 @@
 # Ut_Kids
-Proyecto de Ovacionan de las tecnologias
+Proyecto de Innocación de las tecnologias
