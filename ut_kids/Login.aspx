@@ -37,7 +37,7 @@
                               
                 <br />
 
-               <div class="form-group">
+<%--               <div class="form-group">
                     <asp:Button ID="btnLogin" runat="server" CssClass="btn btn-block btn-sm btn-primary" Text="Ingresar" OnClick="btnLogin_Click" />
                 </div>
 
@@ -45,7 +45,7 @@
                 <asp:Label ID="Label3" runat="server" Text="¿Eres nuevo? Crea tu cuenta" BackColor="White"></asp:Label>
                 <div class="form-group">
                     <asp:Button ID="btnRegistro" runat="server" CssClass="btn  btn-block btn-sm btn-success" Text="Registrarse" OnClick="btnRegistro_Click" />
-                </div>
+                </div>--%>
             </form>
         </div>
     </div>
