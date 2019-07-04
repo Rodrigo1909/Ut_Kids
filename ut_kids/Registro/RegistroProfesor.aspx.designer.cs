@@ -76,6 +76,24 @@ namespace ut_kids.Registro {
         protected global::System.Web.UI.WebControls.TextBox txtDirecExt;
         
         /// <summary>
+        /// Control txtIntCodigo.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtIntCodigo;
+        
+        /// <summary>
+        /// Control validarCodigo.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator validarCodigo;
+        
+        /// <summary>
         /// Control txtDirecReferencia.
         /// </summary>
         /// <remarks>
@@ -130,13 +148,13 @@ namespace ut_kids.Registro {
         protected global::System.Web.UI.WebControls.RegularExpressionValidator validarcasa;
         
         /// <summary>
-        /// Control txtTelOficina.
+        /// Control txtTelOtro.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtTelOficina;
+        protected global::System.Web.UI.WebControls.TextBox txtTelOtro;
         
         /// <summary>
         /// Control validaroficina.
@@ -229,6 +247,24 @@ namespace ut_kids.Registro {
         protected global::System.Web.UI.WebControls.RegularExpressionValidator validarEdad;
         
         /// <summary>
+        /// Control txtSexo.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtSexo;
+        
+        /// <summary>
+        /// Control txtCorreo.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtCorreo;
+        
+        /// <summary>
         /// Control FotoPerfil.
         /// </summary>
         /// <remarks>
@@ -238,48 +274,30 @@ namespace ut_kids.Registro {
         protected global::System.Web.UI.WebControls.FileUpload FotoPerfil;
         
         /// <summary>
-        /// Control txtMail.
+        /// Control txtUsuario.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtMail;
+        protected global::System.Web.UI.WebControls.TextBox txtUsuario;
         
         /// <summary>
-        /// Control txtContra.
+        /// Control txtPass.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtContra;
+        protected global::System.Web.UI.WebControls.TextBox txtPass;
         
         /// <summary>
-        /// Control lbMensaje.
+        /// Control btnRegistrar.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lbMensaje;
-        
-        /// <summary>
-        /// Control RBUsuario.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButton RBUsuario;
-        
-        /// <summary>
-        /// Control RBProveedor.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButton RBProveedor;
+        protected global::System.Web.UI.WebControls.Button btnRegistrar;
     }
 }

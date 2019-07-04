@@ -99,8 +99,10 @@ C:\Users\RodrigoM\Desktop\Ut_Kids\ut_kids\bin\Microsoft.AspNet.FriendlyUrls.xml
 C:\Users\RodrigoM\Desktop\Ut_Kids\ut_kids\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
 C:\Users\RodrigoM\Desktop\Ut_Kids\ut_kids\bin\es\System.Web.Optimization.resources.dll
 C:\Users\RodrigoM\Desktop\Ut_Kids\ut_kids\bin\es\Microsoft.AspNet.FriendlyUrls.resources.dll
-C:\Users\RodrigoM\Desktop\Ut_Kids\ut_kids\obj\Debug\ut_kids.csprojAssemblyReference.cache
-C:\Users\RodrigoM\Desktop\Ut_Kids\ut_kids\obj\Debug\ut_kids.csproj.CoreCompileInputs.cache
-C:\Users\RodrigoM\Desktop\Ut_Kids\ut_kids\obj\Debug\ut_kids.csproj.CopyComplete
 C:\Users\RodrigoM\Desktop\Ut_Kids\ut_kids\obj\Debug\ut_kids.dll
 C:\Users\RodrigoM\Desktop\Ut_Kids\ut_kids\obj\Debug\ut_kids.pdb
+C:\Users\RodrigoM\Desktop\Ut_Kids\ut_kids\bin\Controller.dll
+C:\Users\RodrigoM\Desktop\Ut_Kids\ut_kids\bin\Modelo.dll
+C:\Users\RodrigoM\Desktop\Ut_Kids\ut_kids\bin\Controller.pdb
+C:\Users\RodrigoM\Desktop\Ut_Kids\ut_kids\bin\Modelo.pdb
+C:\Users\RodrigoM\Desktop\Ut_Kids\ut_kids\obj\Debug\ut_kids.csprojResolveAssemblyReference.cache

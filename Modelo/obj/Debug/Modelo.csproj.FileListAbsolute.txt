@@ -1,0 +1,11 @@
+C:\Users\RodrigoM\Desktop\Ut_Kids\Modelo\bin\Debug\Modelo.dll
+C:\Users\RodrigoM\Desktop\Ut_Kids\Modelo\bin\Debug\Modelo.pdb
+C:\Users\RodrigoM\Desktop\Ut_Kids\Modelo\bin\Debug\EntityFramework.dll
+C:\Users\RodrigoM\Desktop\Ut_Kids\Modelo\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\RodrigoM\Desktop\Ut_Kids\Modelo\bin\Debug\MySql.Data.DLL
+C:\Users\RodrigoM\Desktop\Ut_Kids\Modelo\bin\Debug\EntityFramework.xml
+C:\Users\RodrigoM\Desktop\Ut_Kids\Modelo\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\RodrigoM\Desktop\Ut_Kids\Modelo\obj\Debug\Modelo.dll
+C:\Users\RodrigoM\Desktop\Ut_Kids\Modelo\obj\Debug\Modelo.pdb
+C:\Users\RodrigoM\Desktop\Ut_Kids\Modelo\bin\Debug\Modelo.dll.config
+C:\Users\RodrigoM\Desktop\Ut_Kids\Modelo\obj\Debug\Modelo.csprojResolveAssemblyReference.cache

@@ -56,20 +56,26 @@
                                                 </asp:TextBox>
                                              </div>
 
-
-
                                             <div class="form-group">
                                                 <label>Numero Exterior: </label>
                                                 <asp:TextBox ID="txtDirecExt" runat="server" CssClass="form-control input-sm">
                                                 </asp:TextBox>
-                                                </div>   
+                                            </div>   
 
-                                            
+                                            <div class="form-group">
+                                                <label>Codigo Postal: </label>
+                                                <asp:TextBox ID="txtIntCodigo" runat="server" CssClass="form-control input-sm">
+                                                </asp:TextBox>
+                                                <asp:RegularExpressionValidator ID="validarCodigo" runat="server" ControlToValidate="txtIntCodigo"
+                                                    ErrorMessage="Ingrese solo numeros" ForeColor="Red" ValidationExpression="^[0-9]*"></asp:RegularExpressionValidator>
+                                           
+                                            </div>   
+
                                             <div class="form-group">
                                                 <label>Referencias: </label>
                                                 <asp:TextBox ID="txtDirecReferencia" runat="server" CssClass="form-control input-sm">
                                                 </asp:TextBox>
-                                                </div>                                       
+                                             </div>                                
                                             </div>
                                          </div>
                                      </div>
@@ -99,7 +105,6 @@
                                                 </asp:TextBox>
                                                   <asp:RegularExpressionValidator ID="validarcelular" runat="server" ControlToValidate="txtTelCelular"
                                                     ErrorMessage="Ingrese solo numeros" ForeColor="Red" ValidationExpression="^[0-9]*"></asp:RegularExpressionValidator>
-                                           
                                              </div>
 
                                             
@@ -114,10 +119,10 @@
 
                                              
                                              <div class="form-group">
-                                                <label>Oficina: </label>
-                                                <asp:TextBox ID="txtTelOficina" runat="server" CssClass="form-control input-sm" >
+                                                <label>Otro: </label>
+                                                <asp:TextBox ID="txtTelOtro" runat="server" CssClass="form-control input-sm" >
                                                 </asp:TextBox>
-                                                  <asp:RegularExpressionValidator ID="validaroficina" runat="server" ControlToValidate="txtTelOficina"
+                                                  <asp:RegularExpressionValidator ID="validaroficina" runat="server" ControlToValidate="txtTelOtro"
                                                     ErrorMessage="Ingrese solo numeros" ForeColor="Red" ValidationExpression="^[0-9]*"></asp:RegularExpressionValidator>
                                            
                                              </div>
@@ -192,18 +197,26 @@
                                                 </asp:TextBox>
                                                 <asp:RegularExpressionValidator ID="validarEdad" runat="server" ControlToValidate="txtEdad"
                                                     ErrorMessage="Ingrese solo numeros" ForeColor="Red" ValidationExpression="^[0-9]*"></asp:RegularExpressionValidator>
-                                           
-                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label>Sexo: </label>
+                                                <asp:TextBox ID="txtSexo" runat="server" CssClass="form-control input-sm" >
+                                                </asp:TextBox>
+                                            </div>
+
+                                             <div class="form-group">
+                                                <label>Correo: </label>
+                                                <asp:TextBox ID="txtCorreo" runat="server" placeholder="Ejemplo@gmail.com: " required="required"
+                                                        CssClass="form-control input-sm" TextMode="Email" >
+                                                </asp:TextBox>
+                                            </div>
                                                                                                                                                          
                                             <hr />  
                                              <div class="form-group">
                                                 <label>Foto del Perfil: </label>
                                                 <asp:FileUpload ID="FotoPerfil" runat="server" CssClass="form-control input-sm" />  
                                              </div>
-
-                                            
-                            
-                                           
                                         </div>
                                     </div>
                                 </div>
@@ -216,44 +229,33 @@
                                     <div class="panel panel-default">
                                         <div class="panel-heading">
                                             <div class="panel-title">
-                                                Registra tu Correo y Constraseña
+                                                Registra tu Usuario y Constraseña
                                             </div>
                                         </div>
                                         <div class="panel-body">
                                             <div class="form-inline">
 
                                                 <div class="form-group">
-                                                    <label>Correo de Usuario: </label>
-                                                    <asp:TextBox ID="txtMail" runat="server"
-                                                        placeholder="Ejemplo@gmail.com: " required="required"
-                                                        CssClass="form-control input-sm" TextMode="Email"></asp:TextBox>
+                                                    <label>Nombre de Usuario: </label>
+                                                    <asp:TextBox ID="txtUsuario" runat="server"
+                                                        placeholder="Ejemplo" required="required"
+                                                        CssClass="form-control input-sm" ></asp:TextBox>
                                                 </div>
 
                                                 <div class="form-group">
                                                     <label>Contraseña: </label>
-                                                    <asp:TextBox ID="txtContra" runat="server"
+                                                    <asp:TextBox ID="txtPass" runat="server"
                                                         placeholder="Contraseña: " required="required"
                                                         CssClass="form-control input-sm" TextMode="Password"></asp:TextBox>
                                                 </div>
                                                   <hr />
 
-                                                <asp:Label ID="lbMensaje" runat="server" Text="Seleccione su tipo de cuenta:"></asp:Label>
-                                                 <br />
-                                                <asp:RadioButton ID="RBUsuario" runat="server" Text="Usuario"  Checked="True" GroupName="RadioGroup1"  />
-
-                                                <br />
-                                      
-                                                <asp:RadioButton ID="RBProveedor" runat="server" Text="Proveedor" Checked="True" GroupName="RadioGroup1"    />
-
-                                               
-                                                <br />
-
-                                                <%--<a  href="../Login.aspx" class="nav-link" >
-                                                <asp:Button ID="btnRegistrar" runat="server" Text="Registrar" CssClass="btn btn-block btn-sm btn-success" OnClick="btnRegistrarProveedor_Click"/>
-                                                </a>--%>
+                                            <a  href="../Login.aspx" class="nav-link" >
+                                                  <asp:Button ID="btnRegistrar" runat="server" Text="Registrar" CssClass="btn btn-block btn-sm btn-success" OnClick="btnRegistrarPadre_Click" />
+                                            </a>
                                             </div>
                                         </div>
-                                    </div>
+                                    </div>                                    
                                 </div>
                             </div>
                         </div>
