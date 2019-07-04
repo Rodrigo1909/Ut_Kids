@@ -35,10 +35,10 @@ namespace ut_kids
 
         protected void ValidarLogin(TblUser usuario)
         {
-            if (this.txtUser.Text.Equals("administrador@gmail.com") && this.txtPass.Text.Equals("1234"))
+            if (this.txtUser.Text.Equals("administrador") && this.txtPass.Text.Equals("1234"))
             {
                 Session["user"] = txtUser.Text;
-                this.Response.Redirect("/Registro/RegistroProfesor.aspx", true);
+                this.Response.Redirect("./Administrador/InicioAdmin.aspx", true);
             }
             ControllerAutenticacion ctrlAutenticacion = new ControllerAutenticacion();
             TblUser UsuarioLoggeado = ctrlAutenticacion.ValidarLogin(usuario);
@@ -47,11 +47,15 @@ namespace ut_kids
                 Session["user"] = usuario;
                 if (UsuarioLoggeado.strtipoUsuario == "PADRE")
                 {
-                    Response.Redirect("/Registro/RegistroProfesor.aspx", true);
+                    Response.Redirect("./Padre/InicioPadre.aspx", true);
                 }
-                else
+                else if (UsuarioLoggeado.strtipoUsuario == "PROFESOR")
                 {
-                    Response.Redirect("/Registro/RegistroProfesor.aspx", true);
+                Response.Redirect("./Profesor/InicioProfesor.aspx", true);
+                }
+                else if (UsuarioLoggeado.strtipoUsuario == "NINO")
+                {
+                    Response.Redirect("./Nino/InicioNino.aspx", true);
                 }
             }
             else

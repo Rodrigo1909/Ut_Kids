@@ -105,6 +105,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Administrador\InicioAdmin.aspx" />
+    <Content Include="Administrador\RegistrarProfesor.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
@@ -126,11 +128,15 @@
     <Content Include="Imagenes\fondo3.jpg" />
     <Content Include="Imagenes\Iconos\IconDireccion.png" />
     <Content Include="Imagenes\Iconos\IconEdecanes.png" />
+    <Content Include="Imagenes\Iconos\IconProfesor.jpg" />
     <Content Include="Imagenes\Iconos\IconTelefono.png" />
     <Content Include="Imagenes\Logo.jpeg" />
     <Content Include="Imagenes\Panel.png" />
     <Content Include="Login.aspx" />
-    <Content Include="Registro\RegistroProfesor.aspx" />
+    <Content Include="Nino\InicioNino.aspx" />
+    <Content Include="Padre\InicioPadre.aspx" />
+    <Content Include="Profesor\InicioPadre.aspx" />
+    <Content Include="Registro\RegistroPadre.aspx" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
@@ -166,6 +172,20 @@
     <Content Include="Site.Mobile.Master" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Administrador\InicioAdmin.aspx.cs">
+      <DependentUpon>InicioAdmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrador\InicioAdmin.aspx.designer.cs">
+      <DependentUpon>InicioAdmin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrador\RegistrarProfesor.aspx.cs">
+      <DependentUpon>RegistrarProfesor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrador\RegistrarProfesor.aspx.designer.cs">
+      <DependentUpon>RegistrarProfesor.aspx</DependentUpon>
+    </Compile>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Global.asax.cs">
@@ -178,13 +198,34 @@
     <Compile Include="Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Registro\RegistroProfesor.aspx.cs">
-      <DependentUpon>RegistroProfesor.aspx</DependentUpon>
+    <Compile Include="Nino\InicioNino.aspx.cs">
+      <DependentUpon>InicioNino.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Registro\RegistroProfesor.aspx.designer.cs">
-      <DependentUpon>RegistroProfesor.aspx</DependentUpon>
+    <Compile Include="Nino\InicioNino.aspx.designer.cs">
+      <DependentUpon>InicioNino.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Padre\InicioPadre.aspx.cs">
+      <DependentUpon>InicioPadre.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Padre\InicioPadre.aspx.designer.cs">
+      <DependentUpon>InicioPadre.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Profesor\InicioPadre.aspx.cs">
+      <DependentUpon>InicioPadre.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Profesor\InicioPadre.aspx.designer.cs">
+      <DependentUpon>InicioPadre.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Registro\RegistroPadre.aspx.cs">
+      <DependentUpon>RegistroPadre.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Registro\RegistroPadre.aspx.designer.cs">
+      <DependentUpon>RegistroPadre.aspx</DependentUpon>
     </Compile>
     <Compile Include="Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>
@@ -211,6 +252,7 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Imagenes\PRegistrados\" />
+    <Folder Include="Imagenes\ProfeRegistrados\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
